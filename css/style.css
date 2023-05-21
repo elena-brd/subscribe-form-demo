@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap');
+
+/* utilities */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Almarai', sans-serif;
+    line-height: 1.4;
+    color: #282828;
+    overflow: hidden;
+}
+
+/* showcase */
+.showcase {
+    background: url('../img/showcase.jpg') no-repeat center center/cover;
+    height: 90vh;
+    position: relative;
+}
+
+/* header */
+#main-header {
+    background: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+    width: 100%;
+    padding: 1rem 8rem;
+}
+
+#main-header .logo {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+
+#main-header .category ul {
+    display: flex;
+    padding-top: 0.4rem;
+}
+
+#main-header .category a {
+    color: #282828;
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 1.5rem;
+    text-transform: uppercase;
+}
+
+#main-header .category a:hover,
+#main-header .current {
+    border-bottom: 4px solid #aed9e0;
+}
+
+.subscribe {
+    position: absolute;
+    top: 20rem;
+    left: 15rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.container h2 {
+    font-size: 1.8rem;
+}
+
+.container h1 {
+    padding-top: 0.7rem;
+}
+
+.container p {
+    padding: 0.2rem 0;
+}
+
+.container input {
+    padding: 0.7rem 0.2rem;
+    width: 50%;
+    border-radius: 5px;
+    border: 2px solid #b8f2e6;
+}
+
+.btn {
+    display: inline-block;
+    background: #b8f2e6;
+    color: #282828;
+    border-radius: 5px;
+    padding: 0.6rem 2rem;
+    margin: 0 0.6rem;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background: #aed9e0;
+}
+
+footer {
+    background: #282828;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer i {
+    margin: 0 0.6rem;
+}
+
+@media(max-width: 700px) {
+    body {
+        overflow: auto;
+    }
+
+    #main-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #main-header .category a {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .subscribe {
+        position: absolute;
+        width: 350px;
+        top: 10rem;
+        left: 5rem;
+        background: #fff;
+        padding: 2rem;
+        border-radius: 5px;
+    }
+
+    .container input {
+        width: 100%;
+    }
+
+    .container .btn {
+        width: 100%;
+        text-align: center;
+        padding: 0.6rem 1rem;
+        margin: 0.5rem 0;
+        font-size: 1rem;
+    }
+
+
+}
